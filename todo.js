@@ -20,12 +20,18 @@ function registerEvents(){
 		console.log(todoData);
 	});
 	$(".cls_skAll").on("click",function(){
+		$(".cls_skFilters div").removeClass("selected");
+		$(this).addClass("selected");
 		renderList(al);
 	});
 	$(".cls_skActive").on("click",function(){
+		$(".cls_skFilters div").removeClass("selected");
+		$(this).addClass("selected");
 		renderList(active);
 	});
 	$(".cls_skCompleted").on("click",function(){
+		$(".cls_skFilters div").removeClass("selected");
+		$(this).addClass("selected");
 		renderList(comp);
 	});
 }
@@ -102,7 +108,7 @@ function renderFooter()
 	var result = $.grep(todoData, function(ctr){ 
 		return ctr.completed == false; 
 	});
-	if(result.length > 0)
+	if(todoData.length > 0)
 	{
 		$(".cls_skCount span").text(result.length);
 		$(".cls_skTodoBottomWrapper").show();
