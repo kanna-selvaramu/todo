@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	<title>Todo app</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel = "stylesheet" type = "text/css" href = "todo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src = "todo.js"></script>
+</head>
+<body>
+	<div class="cls_skWrapper">
+		<div class="cls_skTitleWrapper">
+			<div class="cls_skTitle">todos</div>
+		</div>
+		<div class="cls_skContentWrapper">
+			<div class="cls_skTodoInputWrapper">
+				<input class="cls_skTodoInp" placeholder="What needs to be done?" type="text">
+			</div>
+			<div class="cls_skTodoContentWrapper">
+				<ul id="todo-list"></ul>
+			</div>
+			<div class="cls_skTodoBottomWrapper">
+				<div class="cls_skCount">
+					<span></span> Items Left
+				</div>
+				<div class="cls_skFilters">
+					<div class="cls_skAll">All</div>
+					<div class="cls_skActive">Active</div>
+					<div class="cls_skCompleted">Completed</div>
+				</div>
+			</div>
+		</div>
+		<div class="cls_skFooterWrapper">
+			<div class="cls_skDescription">Double click to edit a todo</div>
+			<div class="cls_skCreated">Created by</div>
+			<div class="cls_skBootomDesc">Part of todomvc</div>
+		</div>
+	</div>
+</body>
